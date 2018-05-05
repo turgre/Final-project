@@ -7,7 +7,7 @@ class wildWolf():
         self.attack = 2
 
 class bartender():
-    def __init(self):
+    def __init__(self):
         self.name = "Merle"
         self.health = 30
         self.attack = 5
@@ -30,7 +30,7 @@ s = {
     'defence' : stats.defence
     }
 
-sAnswer = input("what stats would you like to check?: ").lower()
-
-if sAnswer == "health" or "gold" or "weapon" or "defence":
-    print(s[sAnswer])
+##sAnswer = input("what stats would you like to check?: ").lower()
+##
+##if sAnswer == "health" or "gold" or "weapon" or "defence":
+##    print(s[sAnswer])
