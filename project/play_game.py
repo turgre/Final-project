@@ -3,12 +3,15 @@ import end_game
 
 
 """This functions goes through all the text for the game. It hold the varables for the characthers and loops"""
+
 def play():
+    ##Stats for player
     player_hp = 50
     player_weapon = 0
     player_defence = 0
     player_gold = 20
     #Code for loop https://stackoverflow.com/questions/32928143/how-to-continue-asking-user-for-input-until-it-is-considered-valid
+    #Varables for loops
     tent = None
     weapon = None
     shops = None
@@ -16,17 +19,18 @@ def play():
     move_t = None
     drink = None
     
+    ##Beginning game
     print("\n A stiff chill sweeps through your tent, you awaken shivering and upset."
         "\n Rubbing the sleep from your eyes, you grab a journal adding a tally mark to a page already littered with those same faded marks.",
         "\n Today marks your 50th day since your separation from the group.")
-    
+
+    ##Giving time for player to read
     time.sleep(2)
     print()
 
     
     tent = input("Get out of your tent? Y/N: ").lower()
 
-    """This makes sure that the user can enter in a right answer if typed in wrong"""
     while tent not in ("y","n"):
         if tent is not None:
             print("Try again")
@@ -72,6 +76,8 @@ def play():
               "\n Maybe you’ll find a better weapon, you walk back your tent taking extra money you stashed away."
               "\n +20 gold")
         player_gold =+ 20
+
+    ##Play enter town and is make deciding on where to go    
         
     time.sleep(2)
 
@@ -91,7 +97,8 @@ def play():
         if shops is not None:
             print("Try again")    
         shops = input("Shop or Tavern?: ").lower()
-        
+
+ ##Play is in the shop picking what to do
     if shops == "shop":
         
             print("\n You are greeted by a feeble old woman."
@@ -152,6 +159,8 @@ def play():
                   move_t = input("To head to the tavern, type Tavern. If you want to go back home, type home: " ).lower()
                   print()
 
+                  
+##Player is in tavern, talking with the bar keep
     if shops or move_t == "tavern":
         
         print("\n You walk into a partly crowded tavern and head straight to the bar."
@@ -177,6 +186,8 @@ def play():
 
         move_h = input("After playing that game you become very tired and you want to go home. Type home to leave: " ).lower()
         print()
+
+##End game options
 
         if t == "n":
             end_game.end_game()
