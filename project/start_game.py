@@ -1,6 +1,5 @@
 import time
 import sys
-import random
 import play_game
 
 
@@ -13,7 +12,7 @@ def start_game():
           "\n What would you like to do?",
           "\n > Start"
           "\n > Quit"
-          "\n★★★★★★★★★★★★★★★★★★★★★★★★")
+          "\n ★★★★★★★★★★★★★★★★★★★★★★★★")
     
     start = input("Enter option here: ").lower()
 

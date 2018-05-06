@@ -2,20 +2,7 @@
 I found it to be extremely challanging and diffucult for myself but I ended up using varable.
 I keep this in the project folder to just show my progress"""
 
-
-class wildWolf():
-    def __init__(self):
-        self.name = "Wolf"
-        self.health = 10
-        self.attack = 2
-
-class bartender():
-    def __init__(self):
-        self.name = "Merle"
-        self.health = 30
-        self.attack = 5
-        
-
+"""Keeps the health, name, gold and attack of the player"""
 class player():
     def __init__(self):
         self.name = ""

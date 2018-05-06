@@ -1,0 +1,6 @@
+In order to run this game you will need:
+
+play_game.py
+start_game.py
+trivia.py
+end_game.py
